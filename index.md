@@ -10,10 +10,10 @@ tra propaganda e meme"
 <div class="subcontent"> 
 	<ul> 
 		<li> <span class="small"> 24/10</span> <a href="{{ "/interventi/noemi.html" | relative_url }}"> Noemi Biasetton </a></li>
-		<li>  <span class="small"> 24/10</span> <a href="/interventi/lolli.html"> Alessandro Lolli </a></li>
-		<li>  <span class="small"> 25/10</span> <a href="/interventi/salvia.html"> Mattia Salvia </a></li>
-		<li>  <span class="small"> 25/10</span> <a href="/interventi/orloski.html"> Alessandro Orlowski </a></li>
-		<li>  <span class="small"> 06/12</span> <a href="/interventi/pater.html"> Ruben Pater </a></li>
+		<li>  <span class="small"> 24/10</span> <a href="{{ "/interventi/lolli.html" | relative_url }}"> Alessandro Lolli </a></li>
+		<li>  <span class="small"> 25/10</span> <a href="{{ "/interventi/salvia.html" | relative_url }}"> Mattia Salvia </a></li>
+		<li>  <span class="small"> 25/10</span> <a href="{{ "/interventi/orloski.html" | relative_url }}"> Alessandro Orlowski </a></li>
+		<li>  <span class="small"> 06/12</span> <a href="{{ "/interventi/pater.html" | relative_url }}"> Ruben Pater </a></li>
 	</ul>
 </div>
 
