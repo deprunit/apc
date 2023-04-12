@@ -9,7 +9,7 @@ tra propaganda e meme"
 </div>
 <div class="subcontent"> 
 	<ul> 
-		<li> <span class="small"> 24/10</span> <a href="/interventi/noemi.html"> Noemi Biasetton </a></li>
+		<li> <span class="small"> 24/10</span> <a href="{{ "/interventi/noemi.html" | relative_url }}"> Noemi Biasetton </a></li>
 		<li>  <span class="small"> 24/10</span> <a href="/interventi/lolli.html"> Alessandro Lolli </a></li>
 		<li>  <span class="small"> 25/10</span> <a href="/interventi/salvia.html"> Mattia Salvia </a></li>
 		<li>  <span class="small"> 25/10</span> <a href="/interventi/orloski.html"> Alessandro Orlowski </a></li>
