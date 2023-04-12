@@ -1,0 +1,371 @@
+/*@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+       url('../fonts/inter-v12-latin-200.woff2') format('woff2'),
+       url('../fonts/inter-v12-latin-200.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/inter-v12-latin-300.woff2') format('woff2'), 
+       url('../fonts/inter-v12-latin-300.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), 
+       url('../fonts/inter-v12-latin-regular.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/inter-v12-latin-500.woff2') format('woff2'), 
+       url('../fonts/inter-v12-latin-500.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/inter-v12-latin-600.woff2') format('woff2'), 
+       url('../fonts/inter-v12-latin-600.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+       url('../fonts/inter-v12-latin-700.woff') format('woff'); 
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/inter-v12-latin-800.woff2') format('woff2'),
+       url('../fonts/inter-v12-latin-800.woff') format('woff'); 
+}*/
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse";
+  src: url("../fonts/SuisseIntl-BoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+$backgroundColor: blue;
+$bodyColor: white;
+$bodyFont: 'Suisse';
+$highlight: orange;
+$transition:0.5s;
+$font-small: 0.8rem;
+$border: 1px solid $bodyColor;
+$padding: 1rem;
+$gutter: $padding;
+$header-height: 17rem;
+
+body {
+  background: linear-gradient(0deg, blue 20%, rgba(138,114,79,1) 52%, blue 83%);;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  margin: $padding;
+}
+::selection {
+  color: $highlight;
+}
+li {
+  list-style: none;
+}
+a {  
+  text-decoration: none;
+  text-underline-offset: 0.3rem;
+  transition: $transition;
+  color: $bodyColor;
+  &:hover {
+    color:$highlight;
+    transition: $transition;
+  }
+}
+p {
+  font-weight: 400;
+}
+
+h1{
+  font-weight:400;
+  font-size: 3rem;
+  line-height: 100%;
+}
+h2{
+  grid-column: 1 / 9;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 110%;
+}
+
+h3{
+  font-weight:600;
+  line-height: 150%;
+  font-size: $font-small;
+}
+
+h4{ 
+   font-weight: 600;
+   font-size: $font-small;
+}
+
+h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+ul {
+  padding:0px;
+}
+.header{
+  padding-right: 1rem !important; 
+  margin: -1rem;
+  position: fixed;
+  line-height: 140%;
+  width: 100%;
+  height: auto;
+  transition: $transition;
+  & a {
+    color: $bodyColor;
+  }
+}
+
+.title{
+  padding: 1rem 0rem 1rem 1rem;
+  grid-column: 1 / 6;
+}
+.menu{
+  padding: 0px 0px $padding $padding;
+  grid-column: 6 / 9;
+  display: flex;
+  align-items: end;
+  & ul {
+    width: 100%;
+  }
+  & li{
+    border-bottom: $border;
+  }
+}
+
+.small{
+  vertical-align: super;
+  font-size: $font-small;
+}
+
+.grid {
+  $columns: 8;
+  display: grid;
+  grid-gap: $gutter;
+  grid-template-columns: repeat($columns, 1fr);
+  & p{
+    grid-column: 1 / 6;
+    padding-bottom: $padding;
+  }
+  & > .column {
+  margin-bottom: 1rem;
+  grid-column: span $columns;
+  } 
+}
+.header{
+  padding-right: 1rem !important; 
+  margin: -1rem;
+  line-height: 140%;
+  width: 100%;
+  height:auto;
+  transition: $transition;
+  position: sticky;
+  & a{
+
+  }
+}
+
+
+.footer{
+  grid-column: 1 / 9;
+  padding: $padding;
+  margin: -1rem;
+  position: sticky;
+  z-index: 103;
+  margin-top: 1rem;
+  font-size: $font-small;
+  line-height: 140%;
+  & > .column {
+    $columns: 2;
+    grid-column: span $columns;  
+  }
+}
+
+#scroll_top {
+  mix-blend-mode: plus-lighter;
+  height: 1rem;
+  width: 1rem;
+  font-size: $font-small;
+  display: none;
+  opacity: 0;
+  position: fixed;
+  bottom: 2rem;
+  z-index: 103;
+  border: $border;
+  outline: none;
+  background-color:lightgoldenrodyellow;
+  color: grey;
+  cursor: pointer;
+  padding: $padding;
+  border-radius: 6rem;
+  /* filter: drop-shadow(0px 0px 6px $color-light); */
+  transition: $transition;
+  content: "";
+  align-content: center;
+  background-image: url(../images/icon_dropdown_arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  right: $padding;
+  filter: blur(9px);
+}
+
+.arrow{
+  
+}
+.content{
+  grid-column: 1 / 6;
+  width: 100%;
+  padding-top: $padding;
+  border-top: $border;
+}
+.subcontent{
+  grid-column: 6 / 9;
+  width: 100%;
+  border-top: $border;
+  & ul{
+    padding: 0px;
+  }
+  & li{
+    font-size:2rem;
+    line-height: 120%;
+    border-bottom: $border;
+  }
+  & li a{
+    font-weight: 400;
+  }
+  & li:after{
+    content: "";
+    align-content: center;
+    -moz-transition: -moz-transform $transition;
+    -o-transition: -o-transform $transition;
+    -webkit-transition: -webkit-transform $transition;
+    transition: transform $transition;
+    background-image: url(../icons/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: -webkit-inline-box;
+    width: 1em;
+    height: 1em;
+    margin-top: 6px;
+    float: right;
+    padding-right:0px;
+  }
+  & li:hover :after{
+    padding-right:10px;
+    transition: 0.5s padding ease-out;
+  }
+}
+
+
+
+
+@media (max-width: 768px){
+
+    $header-height:7rem;
+
+    .header{
+      height: auto;
+      & h1{
+        font-size:1rem !important;
+        font-weight: 500;
+      }
+    }
+
+   .grid p{
+    grid-column: 1 / 8;
+   }
+   .title{
+    grid-column: 1 / 6;
+   }
+   .menu {
+    grid-column: 6 / 9;
+   }
+   .content{
+    grid-column: 1 / 9;
+  }
+  .subcontent{
+    grid-column: 1 / 9;
+    & li {
+      font-size: 1.5rem;
+    }
+  }
+  .footer > .column{
+    $columns: 4;
+    grid-column: span $columns;  
+  }
+}
+
+
+
+
