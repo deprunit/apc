@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 # Noemi Biasetton
 ## Nome dell'intervento

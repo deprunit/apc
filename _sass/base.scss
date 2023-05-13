@@ -114,12 +114,15 @@ $border: 1px solid $bodyColor;
 $padding: 1rem;
 $gutter: $padding;
 $header-height: 17rem;
+html{
+  scroll-behavior:smooth;
+}
 
 body {
   background: linear-gradient(0deg, blue 20%, rgba(138,114,79,1) 52%, blue 83%);;
   color: $bodyColor;
   font-family: $bodyFont;
-  margin: $padding;
+  margin: $padding calc(#{$padding}* 1.5);
 }
 ::selection {
   color: $highlight;
@@ -139,12 +142,12 @@ a {
 }
 p {
   font-weight: 400;
+  padding: 0px;
 }
 
 h1{
   font-weight:400;
   font-size: 3rem;
-  line-height: 100%;
 }
 h2{
   grid-column: 1 / 9;
@@ -176,18 +179,34 @@ ul {
   padding-right: 1rem !important; 
   margin: -1rem;
   position: fixed;
-  line-height: 140%;
+  line-height: 120%;
   width: 100%;
   height: auto;
   transition: $transition;
   & a {
     color: $bodyColor;
   }
+  & h1{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .title{
-  padding: 1rem 0rem 1rem 1rem;
+  padding: 0rem 0rem 1rem 1rem;
   grid-column: 1 / 6;
+}
+.subtitle{
+  padding: 2rem 0rem 0rem 1rem;
+  grid-column: 6/9;
+  font-size: 2.5rem;
+  line-height: 120%;
+  /* letter-spacing: -0.03rem; */
+  font-weight: 400;
+  /* font-variant: tabular-nums; */
+  /* align-self: self-end; */
+  text-align: right;
+
 }
 .menu{
   padding: 0px 0px $padding $padding;
@@ -210,11 +229,11 @@ ul {
 .grid {
   $columns: 8;
   display: grid;
-  grid-gap: $gutter;
+  grid-gap: calc(#{$gutter} / 2);
   grid-template-columns: repeat($columns, 1fr);
   & p{
     grid-column: 1 / 6;
-    padding-bottom: $padding;
+    margin:0px;
   }
   & > .column {
   margin-bottom: 1rem;
@@ -224,16 +243,26 @@ ul {
 .header{
   padding-right: 1rem !important; 
   margin: -1rem;
-  line-height: 140%;
+  line-height: 120%;
   width: 100%;
   height:auto;
   transition: $transition;
   position: sticky;
+  & h1{
+    line-height: 100%;
+  }
   & a{
 
   }
 }
-
+.post{
+  grid-column: 1 / 6;
+  & h1{
+    border-top: 1px white solid;
+    grid-column: 1 / 6;
+    padding-top: 1rem;
+  }
+}
 
 .footer{
   grid-column: 1 / 9;
@@ -339,6 +368,7 @@ ul {
       & h1{
         font-size:1rem !important;
         font-weight: 500;
+        line-height: 120%;
       }
     }
 
@@ -347,6 +377,12 @@ ul {
    }
    .title{
     grid-column: 1 / 6;
+    padding-bottom: 0px;
+   }
+   .subtitle{
+    padding: $padding 0rem 0rem $padding;
+    grid-column: 1 / 6;
+    font-size: unset;
    }
    .menu {
     grid-column: 6 / 9;
@@ -359,6 +395,9 @@ ul {
     & li {
       font-size: 1.5rem;
     }
+  }
+  .post{
+    grid-column: 1 / 9;
   }
   .footer > .column{
     $columns: 4;

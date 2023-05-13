@@ -103,11 +103,15 @@
   font-weight: 600;
   font-style: italic;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(0deg, blue 20%, rgb(138, 114, 79) 52%, blue 83%);
   color: white;
   font-family: "Suisse";
-  margin: 1rem;
+  margin: 1rem calc(1rem* 1.5);
 }
 
 ::selection {
@@ -131,12 +135,12 @@ a:hover {
 
 p {
   font-weight: 400;
+  padding: 0px;
 }
 
 h1 {
   font-weight: 400;
   font-size: 3rem;
-  line-height: 100%;
 }
 
 h2 {
@@ -171,7 +175,7 @@ ul {
   padding-right: 1rem !important;
   margin: -1rem;
   position: fixed;
-  line-height: 140%;
+  line-height: 120%;
   width: 100%;
   height: auto;
   transition: 0.5s;
@@ -179,10 +183,26 @@ ul {
 .header a {
   color: white;
 }
+.header h1 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
 
 .title {
-  padding: 1rem 0rem 1rem 1rem;
+  padding: 0rem 0rem 1rem 1rem;
   grid-column: 1/6;
+}
+
+.subtitle {
+  padding: 2rem 0rem 0rem 1rem;
+  grid-column: 6/9;
+  font-size: 2.5rem;
+  line-height: 120%;
+  /* letter-spacing: -0.03rem; */
+  font-weight: 400;
+  /* font-variant: tabular-nums; */
+  /* align-self: self-end; */
+  text-align: right;
 }
 
 .menu {
@@ -205,12 +225,12 @@ ul {
 
 .grid {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: calc(1rem / 2);
   grid-template-columns: repeat(8, 1fr);
 }
 .grid p {
   grid-column: 1/6;
-  padding-bottom: 1rem;
+  margin: 0px;
 }
 .grid > .column {
   margin-bottom: 1rem;
@@ -220,12 +240,24 @@ ul {
 .header {
   padding-right: 1rem !important;
   margin: -1rem;
-  line-height: 140%;
+  line-height: 120%;
   width: 100%;
   height: auto;
   transition: 0.5s;
   position: sticky;
 }
+.header h1 {
+  line-height: 100%;
+}
+.post {
+  grid-column: 1/6;
+}
+.post h1 {
+  border-top: 1px white solid;
+  grid-column: 1/6;
+  padding-top: 1rem;
+}
+
 .footer {
   grid-column: 1/9;
   padding: 1rem;
@@ -322,12 +354,19 @@ ul {
   .header h1 {
     font-size: 1rem !important;
     font-weight: 500;
+    line-height: 120%;
   }
   .grid p {
     grid-column: 1/8;
   }
   .title {
     grid-column: 1/6;
+    padding-bottom: 0px;
+  }
+  .subtitle {
+    padding: 1rem 0rem 0rem 1rem;
+    grid-column: 1/6;
+    font-size: unset;
   }
   .menu {
     grid-column: 6/9;
@@ -340,6 +379,9 @@ ul {
   }
   .subcontent li {
     font-size: 1.5rem;
+  }
+  .post {
+    grid-column: 1/9;
   }
   .footer > .column {
     grid-column: span 4;
