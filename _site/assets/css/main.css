@@ -111,7 +111,7 @@ body {
 }
 
 ::selection {
-  color: orange;
+  color: rgb(138, 114, 79);
 }
 
 li {
@@ -125,7 +125,7 @@ a {
   color: white;
 }
 a:hover {
-  color: orange;
+  color: rgb(138, 114, 79);
   transition: 0.5s;
 }
 
