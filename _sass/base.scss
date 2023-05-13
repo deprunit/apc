@@ -378,7 +378,7 @@ ul {
 
   $header-height:7rem;
   body {
-    margin: $padding calc(#{$padding}* 1.5);
+    margin: $padding calc(#{$padding}* 1);
     font-size: $bodySize;
   }
   .header{
@@ -394,7 +394,7 @@ ul {
   grid-column: 1 / 8;
  }
  .title{
-  grid-column: 1 / 6;
+  grid-column: 1 / 9;
   padding-bottom: 0px;
  }
  .subtitle{

@@ -363,7 +363,7 @@ ul {
 
 @media (max-width: 768px) {
   body {
-    margin: 1rem calc(1rem* 1.5);
+    margin: 1rem calc(1rem* 1);
     font-size: 15px;
   }
   .header {
@@ -378,7 +378,7 @@ ul {
     grid-column: 1/8;
   }
   .title {
-    grid-column: 1/6;
+    grid-column: 1/9;
     padding-bottom: 0px;
   }
   .subtitle {
