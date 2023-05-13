@@ -348,6 +348,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+  body {
+    margin: 1rem calc(1rem* 1.5);
+  }
   .header {
     height: auto;
   }
