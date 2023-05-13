@@ -1,5 +1,8 @@
 ---
 layout: post
+bio: 'Mattia Salvia ha lavorato come giornalista nelle redazioni di VICE Italia e Rolling Stone.
+Nel 2019 ha fondato Iconografie, rivista sullo spirito del tempo presente, di cui è editor. 
+È l’autore di “Interregno. Iconografie del XXI secolo” (NERO, 2022).'
 ---
 # Mattia Salvia
 ## Meme talebani

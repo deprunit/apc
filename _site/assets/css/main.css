@@ -112,6 +112,7 @@ body {
   color: white;
   font-family: "Suisse";
   margin: 1rem calc(1rem* 1.5);
+  font-size: 17px;
 }
 
 ::selection {
@@ -236,6 +237,9 @@ ul {
   margin-bottom: 1rem;
   grid-column: span 8;
 }
+.grid:has(.post) {
+  grid-gap: calc(1rem * 2);
+}
 
 .header {
   padding-right: 1rem !important;
@@ -256,6 +260,16 @@ ul {
   border-top: 1px white solid;
   grid-column: 1/6;
   padding-top: 1rem;
+  margin: 0px;
+}
+
+.bio {
+  grid-column: 6/9;
+  padding-top: 1rem;
+  border-top: 1px solid white;
+}
+.bio h2 {
+  margin-top: 0px;
 }
 
 .footer {
@@ -350,6 +364,7 @@ ul {
 @media (max-width: 768px) {
   body {
     margin: 1rem calc(1rem* 1.5);
+    font-size: 15px;
   }
   .header {
     height: auto;
@@ -384,6 +399,9 @@ ul {
     font-size: 1.5rem;
   }
   .post {
+    grid-column: 1/9;
+  }
+  .bio {
     grid-column: 1/9;
   }
   .footer > .column {

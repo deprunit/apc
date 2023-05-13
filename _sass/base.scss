@@ -114,6 +114,7 @@ $border: 1px solid $bodyColor;
 $padding: 1rem;
 $gutter: $padding;
 $header-height: 17rem;
+$bodySize: 17px;
 html{
   scroll-behavior:smooth;
 }
@@ -123,6 +124,7 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
   margin: $padding calc(#{$padding}* 1.5);
+  font-size: $bodySize;
 }
 ::selection {
   color: $highlight;
@@ -239,6 +241,10 @@ ul {
   margin-bottom: 1rem;
   grid-column: span $columns;
   } 
+  &:has(.post){
+    grid-gap: calc(#{$gutter} * 2);
+
+  }
 }
 .header{
   padding-right: 1rem !important; 
@@ -261,9 +267,17 @@ ul {
     border-top: 1px white solid;
     grid-column: 1 / 6;
     padding-top: 1rem;
+    margin:0px;
   }
 }
-
+.bio{
+  grid-column: 6 / 9;
+  padding-top: $padding;
+  border-top: $border;
+  & h2{
+    margin-top: 0px;
+  }
+}
 .footer{
   grid-column: 1 / 9;
   padding: $padding;
@@ -360,51 +374,56 @@ ul {
 
 
 @media (max-width: 768px){
+  $bodySize: 15px;
 
-    $header-height:7rem;
-    body {
-        margin: $padding calc(#{$padding}* 1.5);
+  $header-height:7rem;
+  body {
+    margin: $padding calc(#{$padding}* 1.5);
+    font-size: $bodySize;
+  }
+  .header{
+    height: auto;
+    & h1{
+      font-size:1rem !important;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+
+ .grid p{
+  grid-column: 1 / 8;
+ }
+ .title{
+  grid-column: 1 / 6;
+  padding-bottom: 0px;
+ }
+ .subtitle{
+  padding: $padding 0rem 0rem $padding;
+  grid-column: 1 / 6;
+  font-size: unset;
+ }
+ .menu {
+  grid-column: 6 / 9;
+ }
+ .content{
+  grid-column: 1 / 9;
 }
-    .header{
-      height: auto;
-      & h1{
-        font-size:1rem !important;
-        font-weight: 500;
-        line-height: 120%;
-      }
-    }
-
-   .grid p{
-    grid-column: 1 / 8;
-   }
-   .title{
-    grid-column: 1 / 6;
-    padding-bottom: 0px;
-   }
-   .subtitle{
-    padding: $padding 0rem 0rem $padding;
-    grid-column: 1 / 6;
-    font-size: unset;
-   }
-   .menu {
-    grid-column: 6 / 9;
-   }
-   .content{
-    grid-column: 1 / 9;
+.subcontent{
+  grid-column: 1 / 9;
+  & li {
+    font-size: 1.5rem;
   }
-  .subcontent{
-    grid-column: 1 / 9;
-    & li {
-      font-size: 1.5rem;
-    }
-  }
-  .post{
-    grid-column: 1 / 9;
-  }
-  .footer > .column{
-    $columns: 4;
-    grid-column: span $columns;  
-  }
+}
+.post{
+  grid-column: 1 / 9;
+}
+.bio{
+grid-column: 1 / 9;
+}
+.footer > .column{
+  $columns: 4;
+  grid-column: span $columns;  
+}
 }
 
 
