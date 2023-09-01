@@ -5,7 +5,7 @@ tra propaganda e meme"
 ---
 <div class="content"> 
 <h2><a name="talk">Talk</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed diam non leo tincidunt convallis sed at nulla. Duis suscipit egestas lectus, vel vehicula sem lacinia vitae. Donec maximus varius leo eu molestie. Maecenas pulvinar nulla turpis, id pretium purus venenatis at. Morbi in maximus erat. Aliquam sodales interdum vulputate. Nulla lobortis eros sed velit blandit hendrerit. Suspendisse tellus sapien, consequat non odio vel, commodo efficitur lacus. Quisque et erat justo. Aenean suscipit, ex et blandit dictum, ex odio luctus massa, non elementum nibh ex non mi. Morbi dui tellus, pellentesque at congue eu, lacinia fermentum libero. Ut sit amet enim facilisis, consectetur dolor quis, cursus eros. Aliquam fermentum placerat tortor non sodales. Cras ac malesuada nulla, eget convallis dui. Etiam tincidunt diam fringilla lobortis porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pretium sagittis fermentum.</p>
+<p>Al Perpetuo Crepuscolo è stato un seminario sui temi della propaganda politica e dell'estetica dei nuovi media. Per affrontarlo abbiamo chiesto a figure di ambiti diversi di parlarci del loro studio sul caso</p>
 </div>
 <div class="subcontent"> 
 	<ul> 
