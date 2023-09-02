@@ -281,6 +281,10 @@ ul {
     padding-top: 1rem;
     margin:0px;
   }
+  & img{
+    max-width: 100%;
+    padding: 1rem 0rem;
+  }
 }
 .bio{
   grid-column: 6 / 9;
