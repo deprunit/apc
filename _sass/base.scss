@@ -189,6 +189,10 @@ a {
     }
   }
 }
+div:has(>a.download){
+  //position: sticky;
+  //top: 1rem;
+}
 p {
   font-weight: 400;
   padding: 0px;
