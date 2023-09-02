@@ -141,8 +141,8 @@ body {
 .gradient {
   position: absolute;
   margin: -2rem;
-  height: 110%;
-  width: 120%;
+  height: calc(100% + 4rem);
+  width: calc(100% + 4rem);
   z-index:-1 !important;
   background: linear-gradient(0deg, blue 20%, rgba(138,114,79,1) 52%, blue 83%);
   animation: gradientOpacity 15s linear infinite;
