@@ -141,6 +141,18 @@ a {
     color:$highlight;
     transition: $transition;
   }
+  &.download{
+    position: absolute;
+    padding: 0.54rem;
+    border: 2px solid $bodyColor;
+    margin-top: 1rem;
+    background: $bodyColor;
+    color: $backgroundColor;
+    &:hover{
+      background: $backgroundColor;
+      color: $bodyColor;
+    }
+  }
 }
 p {
   font-weight: 400;

@@ -1,4 +1,8 @@
 {% include header_post.html %}
 <div class="post">{{content}}</div>
-<div class="bio"> <h2> Bio </h2>{{page.bio}}</div>
+<div class = "bio "> 
+ <div><h2> Bio </h2>{{page.bio}}</div>
+
+ <a class = "download" href="{{site.baseurl}}/interventi/{{page.download}}"> Download PDF </a>
+</div>
 {% include footer.html %}

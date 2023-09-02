@@ -133,6 +133,18 @@ a:hover {
   color: rgb(138, 114, 79);
   transition: 0.5s;
 }
+a.download {
+  position: absolute;
+  padding: 0.54rem;
+  border: 2px solid white;
+  margin-top: 1rem;
+  background: white;
+  color: blue;
+}
+a.download:hover {
+  background: blue;
+  color: white;
+}
 
 p {
   font-weight: 400;

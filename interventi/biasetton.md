@@ -5,6 +5,7 @@ Dal 2016 lavora con ONG, riviste ed enti culturali utilizzando la scrittura e il
 l’Università Iuav di Venezia, dove sta svolgendo un’indagine storico-critica rispetto al rapporto tra design della comunicazione, comunicazione politica e nuovi media nelle società occidentali.
 Durante il suo intervento offrirà una breve panoramica storica rispetto all’evoluzione del rapporto tra design della comunicazione,
 comunicazione politica e nuovi media durante gli anni ’60 e ’70. In seguito, si rifletterà collettivamente sull’eredità di questo periodo storico rispetto alle pratiche progettuali nello scenario politico contemporaneo.'
+download: biasetton.pdf
 ---
 # Noemi Biasetton
 ## Nuovi Media, Politica e Design: Una Nuova Arena 

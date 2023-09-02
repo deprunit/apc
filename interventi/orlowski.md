@@ -6,6 +6,8 @@ L’agenzia opera negli Stati Uniti, in Europa e in Sud America. Alessandro Orlo
 Analytics, uno strumento di Social Media/Web Listening/Big Data Analysis che consente di monitorare le reti sociali e che consente
 di individuare reti automatizzate e account che diffondono fake news analizzando così come queste informazioni sono diventate virali. Negli ultimi due anni Alex Orlowski è stato più volte citato dai media italiani ed europei per le sue
 indagini sulle strategie di disinformazione e sulle BOTnet, in Italia e in Spagna, e su come queste possano essere collegate alla propaganda russa. Ha anche scritto diversi articoli per la rivista Rolling Stone ed è stato ospite di Report,di Fanpage, Piazza Pulita e SkyTG24.'
+download: orlowski.pdf
+
 ---
 # Alessandro Orlowski
 ## Nome dell'intervento
