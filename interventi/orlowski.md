@@ -7,7 +7,7 @@ Analytics, uno strumento di Social Media/Web Listening/Big Data Analysis che con
 di individuare reti automatizzate e account che diffondono fake news analizzando così come queste informazioni sono diventate virali. Negli ultimi due anni Alex Orlowski è stato più volte citato dai media italiani ed europei per le sue
 indagini sulle strategie di disinformazione e sulle BOTnet, in Italia e in Spagna, e su come queste possano essere collegate alla propaganda russa. Ha anche scritto diversi articoli per la rivista Rolling Stone ed è stato ospite di Report,di Fanpage, Piazza Pulita e SkyTG24.'
 download: orlowski.pdf
+nome: "Alessandro Orlowski"
+titolo: "Titolo"
 
 ---
-# Alessandro Orlowski
-## Nome dell'intervento

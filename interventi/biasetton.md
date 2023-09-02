@@ -6,9 +6,10 @@ l’Università Iuav di Venezia, dove sta svolgendo un’indagine storico-critic
 Durante il suo intervento offrirà una breve panoramica storica rispetto all’evoluzione del rapporto tra design della comunicazione,
 comunicazione politica e nuovi media durante gli anni ’60 e ’70. In seguito, si rifletterà collettivamente sull’eredità di questo periodo storico rispetto alle pratiche progettuali nello scenario politico contemporaneo.'
 download: biasetton.pdf
+nome: "Noemi Biasetton"
+titolo: "Nuovi media, politica e design: una nuova arena"
 ---
-# Noemi Biasetton
-## Nuovi Media, Politica e Design: Una Nuova Arena 
+
 
 Volevo ringraziare Alessandro Stefania Serena per avermi invitato oggi. 
 Ho dato per scontato che Alessandro Lolli avrebbe parlato dei temi legati alla sua ricerca che hanno che fare con la memetica [e per questo] ho deciso di non parlare di politica contemporanea ma piuttosto di [ispirarmi al] titolo di questo seminario e cercare di capire le origini tra la comunicazione politica e la società dell'informazione, [parlando] del rapporto che nasce negli anni sessanta tra la comunicazione politica in concomitanza alla nascita dei nuovi media. [Guardando nello specifico] come il design della comunicazione visiva in quegli anni si forma, aprendo a dei cambiamenti che poi diventeranno fondamentali per la disciplina.

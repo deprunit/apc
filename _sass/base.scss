@@ -107,7 +107,7 @@
 $backgroundColor: blue;
 $bodyColor: white;
 $bodyFont: 'Suisse';
-$highlight: rgba(138,114,79,1);
+$highlight: grey;
 $transition:0.5s;
 $font-small: 0.8rem;
 $border: 1px solid $bodyColor;
@@ -115,17 +115,49 @@ $padding: 1rem;
 $gutter: $padding;
 $header-height: 17rem;
 $bodySize: 17px;
+
 html{
-  scroll-behavior:smooth;
+  //scroll-behavior:smooth;
+  min-height: 100%
+
 }
 
 body {
-  background: linear-gradient(0deg, blue 20%, rgba(138,114,79,1) 52%, blue 83%);;
+  //background: linear-gradient(0deg, blue 20%, rgba(138,114,79,1) 52%, blue 83%);
+  animation: gradientChange  2s linear infinite;
   color: $bodyColor;
   font-family: $bodyFont;
   margin: $padding calc(#{$padding}* 1.5);
   font-size: $bodySize;
+  min-height: 100% !important;
+  position: relative;
+  &>*{
+    //z-index: 10000;
+    //position: relative;
+    //min-height:100%;
+  }
 }
+
+.gradient {
+  position: absolute;
+  margin: -2rem;
+  height: 101%;
+  width: 120%;
+  z-index:-1 !important;
+  background: linear-gradient(0deg, blue 20%, rgba(138,114,79,1) 52%, blue 83%);
+  animation: gradientOpacity 10s ease infinite;
+}
+.gradient2{
+  @extend .gradient;
+   background: linear-gradient(0deg, blue 40%, #D5AB2F 52%, blue 63%);
+   z-index:-2 !important;
+   animation: none;
+}
+@keyframes gradientOpacity{
+        20%{opacity: 1}
+        40%{opacity:0;}
+        60%{opacity: 1}
+      }
 ::selection {
   color: $highlight;
 }

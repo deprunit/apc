@@ -4,10 +4,10 @@ bio: 'Mattia Salvia ha lavorato come giornalista nelle redazioni di VICE Italia 
 Nel 2019 ha fondato Iconografie, rivista sullo spirito del tempo presente, di cui è editor. 
 È l’autore di “Interregno. Iconografie del XXI secolo” (NERO, 2022).'
 download: salvia.pdf
+nome: "Mattia Salvia"
+titolo: "Meme talebani"
 
 ---
-# Mattia Salvia
-## Meme talebani
 
 Ciao a tutti e a tutte. Grazie per l'invito.  Società dell'informazione, propaganda e meme. Io ho deciso di parlare oggi di uno degli argomenti che tratto nel libro che la questione dei meme talebani e di tutto quello che ci gira intorno.
 
