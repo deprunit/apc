@@ -119,27 +119,33 @@ body {
 .gradient, .gradient2 {
   position: absolute;
   margin: -2rem;
-  height: 101%;
+  height: 110%;
   width: 120%;
   z-index: -1 !important;
   background: linear-gradient(0deg, blue 20%, rgb(138, 114, 79) 52%, blue 83%);
-  animation: gradientOpacity 10s ease infinite;
+  animation: gradientOpacity 15s linear infinite;
 }
 
 .gradient2 {
-  background: linear-gradient(0deg, blue 40%, #D5AB2F 52%, blue 63%);
+  background: linear-gradient(0deg, blue 5%, #D5C595 52%, blue 93%);
   z-index: -2 !important;
   animation: none;
 }
 
 @keyframes gradientOpacity {
-  20% {
+  0% {
     opacity: 1;
   }
-  40% {
+  12% {
     opacity: 0;
   }
-  60% {
+  16% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  40% {
     opacity: 1;
   }
 }
