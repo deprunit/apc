@@ -285,7 +285,7 @@ code{
 .grid {
   $columns: 8;
   display: grid;
-  grid-gap: calc(#{$gutter} / 2);
+  grid-gap: calc(#{$gutter} * 1);
   grid-template-columns: repeat($columns, 1fr);
   & p{
     grid-column: 1 / 6;
@@ -296,7 +296,7 @@ code{
   grid-column: span $columns;
   } 
   &:has(.post){
-    grid-gap: calc(#{$gutter} * 2);
+    grid-gap: calc(#{$gutter} * 1);
 
   }
 }
@@ -317,10 +317,13 @@ code{
 }
 .post{
   grid-column: 1 / 6;
+  width: 100%;
+  padding-top: $padding;
+  border-top: $border;
   & h1{
-    border-top: 1px white solid;
-    grid-column: 1 / 6;
-    padding-top: 1rem;
+    //border-top: 1px white solid;
+    //grid-column: 1 / 6;
+    //padding-top: 1rem;
     margin:0px;
   }
   & img{
@@ -330,6 +333,7 @@ code{
 }
 .bio{
   grid-column: 6 / 9;
+  width: 100%;
   padding-top: $padding;
   border-top: $border;
   & h2{

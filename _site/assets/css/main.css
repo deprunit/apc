@@ -276,7 +276,7 @@ code {
 
 .grid {
   display: grid;
-  grid-gap: calc(1rem / 2);
+  grid-gap: calc(1rem * 1);
   grid-template-columns: repeat(8, 1fr);
 }
 .grid p {
@@ -288,7 +288,7 @@ code {
   grid-column: span 8;
 }
 .grid:has(.post) {
-  grid-gap: calc(1rem * 2);
+  grid-gap: calc(1rem * 1);
 }
 
 .header {
@@ -305,11 +305,11 @@ code {
 }
 .post {
   grid-column: 1/6;
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid white;
 }
 .post h1 {
-  border-top: 1px white solid;
-  grid-column: 1/6;
-  padding-top: 1rem;
   margin: 0px;
 }
 .post img {
@@ -319,6 +319,7 @@ code {
 
 .bio {
   grid-column: 6/9;
+  width: 100%;
   padding-top: 1rem;
   border-top: 1px solid white;
 }
