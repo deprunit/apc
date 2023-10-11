@@ -207,6 +207,8 @@ h2{
   font-weight: 400;
   font-size: 2rem;
   line-height: 110%;
+  margin-top: 0px;
+  padding-top: 1rem;
 }
 
 h3{
@@ -280,6 +282,7 @@ code{
 .small{
   vertical-align: super;
   font-size: $font-small;
+  font-weight: 400;
 }
 
 .grid {
@@ -390,7 +393,7 @@ code{
 .content{
   grid-column: 1 / 6;
   width: 100%;
-  padding-top: $padding;
+  margin-bottom: calc($padding * 2) ;
   border-top: $border;
 }
 .subcontent{
@@ -399,14 +402,26 @@ code{
   border-top: $border;
   & ul{
     padding: 0px;
+    margin-top: 5rem;
   }
   & li{
-    font-size:2rem;
-    line-height: 120%;
+    
+    font-weight: 300;
+    font-size:2.5rem;
+    line-height: 1.2em;
     border-bottom: $border;
+    transition: $transition;
+    &:hover{
+      padding-left: 0.5rem;
+    background: rgb(255,255,255,50%);
+    -webkit-animation: color 0.5s ease-in 0s forwards;
+    -moz-animation: color 0.5s ease-in 0s forwards;
+    -o-animation: color 0.5s ease-in 0s forwards;
+    //transition: $transition ;
+    cursor: pointer;
+    }
   }
   & li a{
-    font-weight: 400;
   }
   & li:after{
     content: "";
@@ -427,6 +442,7 @@ code{
     padding-right:0px;
   }
   & li:hover :after{
+
     padding-right:10px;
     transition: 0.5s padding ease-out;
   }
@@ -490,5 +506,22 @@ grid-column: 1 / 9;
 }
 
 
+@-webkit-keyframes color {
+      0%   { color: white; }
+      50%  { color: rgba(138,114,79,1); }
+      100% { color: blue; }
+}
+
+@-moz-keyframes color {
+      0%   { color: white; }
+      50%  { color: rgba(138,114,79,1); }
+      100% { color: blue; }
+}
+
+@-o-keyframes color {
+      0%   { color: white; }
+      50%  { color: rgba(138,114,79,1); }
+      100% { color: blue; }
+}
 
 
