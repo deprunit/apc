@@ -413,7 +413,7 @@ code{
     transition: $transition;
     &:hover{
       padding-left: 0.5rem;
-    background: rgb(255,255,255,50%);
+    background: rgb(255,255,255);
     -webkit-animation: color 0.5s ease-in 0s forwards;
     -moz-animation: color 0.5s ease-in 0s forwards;
     -o-animation: color 0.5s ease-in 0s forwards;
