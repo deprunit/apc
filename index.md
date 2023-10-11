@@ -32,7 +32,12 @@ La seconda ragiona sui progetti politici di designer senza committenti; resta tu
 
 <div class="content"> 
 <h2><a name="workshop">Workshop</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed diam non leo tincidunt convallis sed at nulla. Duis suscipit egestas lectus, vel vehicula sem lacinia vitae. Donec maximus varius leo eu molestie. Maecenas pulvinar nulla turpis, id pretium purus venenatis at. Morbi in maximus erat. Aliquam sodales interdum vulputate. Nulla lobortis eros sed velit blandit hendrerit. Suspendisse tellus sapien, consequat non odio vel, commodo efficitur lacus. Quisque et erat justo. Aenean suscipit, ex et blandit dictum, ex odio luctus massa, non elementum nibh ex non mi. Morbi dui tellus, pellentesque at congue eu, lacinia fermentum libero. Ut sit amet enim facilisis, consectetur dolor quis, cursus eros. Aliquam fermentum placerat tortor non sodales. Cras ac malesuada nulla, eget convallis dui. Etiam tincidunt diam fringilla lobortis porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pretium sagittis fermentum.</p>
+<p>L’obiettivo è stato quello di analizzare i gruppi di supporter politici attraverso il political compass, strumento nato sul web per visualizzare soggetti politici e poi diventato base per i meme. 
+Il gruppo, di quaranta partecipanti, è stato diviso infatti in quattro gruppi, quanti sono i quadranti: authoritarian left, authoritarian right, libertarian left e libertarian right.
+Dopo la raccolta di dati quantitativi (numero di like e condivisioni, data del post, presenza di testo) e qualitativi (qualità delle immagini, tono di voce…) delle pagine dei supporter di ogni gruppo politico, siamo passati alla creazione dei meme, con l’obiettivo di immedesimarci nella fazione oggetto dell’analisi, anche se opposta alla propria. Abbiamo riservato tuttavia, a chi ne sentisse la necessità, la possibilità di creare meme con un messaggio in linea con i propri principi, ma con le modalità della fazione del proprio gruppo.
+Successivamente abbiamo posizionato i singoli meme sul politcal compass, sulla base del nostro personale giudizio, attraverso l’uso di uno script.
+Poiché è possibile automatizzare il posizionamento del meme sul compass, ipotizziamo che nelle proposte successive del workshop i partecipanti possano assegnare ad ogni immagine un valore discreto per ognuno dei due assi, economico (↔) e sociale (↕).
+Il political compass è uno strumento efficace per analizzare in maniera accurata l’orientamento di un attore politico. Per approfondire si guardi al sito <a href="https://www.politicalcompass.org/"><u>↗politicalcompass.org</u></a>.</p>
 </div>
 <div class="subcontent"> 
 	<ul> 
