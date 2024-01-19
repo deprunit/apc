@@ -330,8 +330,19 @@ code{
     margin:0px;
   }
   & img{
+    border-top: 1px solid $bodyColor; 
+    margin-top: 1rem;
     max-width: 100%;
     padding: 1rem 0rem;
+    display: block;
+  }
+  & em{
+    font-size: 0.75rem;
+    display: block;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-style: normal;
+    border-bottom: 1px solid $bodyColor;
   }
 }
 .bio{
