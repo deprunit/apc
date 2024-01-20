@@ -381,6 +381,9 @@ code{
     margin-top: 0px;
   }
 }
+.bio-mobile{
+  display: none;
+}
 .footer{
   grid-column: 1 / 9;
   padding: $padding;
@@ -398,31 +401,31 @@ code{
 
 #scroll_top {
   mix-blend-mode: plus-lighter;
-  height: 1rem;
-  width: 1rem;
-  font-size: $font-small;
+  height: 0.5rem;
+  width: 0.5rem;
+  font-size: 0.8rem;
   display: none;
   opacity: 0;
   position: fixed;
   bottom: 2rem;
   z-index: 104;
-  border: $border;
+  border: 1px solid white;
   outline: none;
-  background-color:lightgoldenrodyellow;
-  color: grey;
+  background-color: white;
+  /* color: grey; */
   cursor: pointer;
-  padding: $padding;
+  padding: 1rem;
   border-radius: 6rem;
-  /* filter: drop-shadow(0px 0px 6px $color-light); */
-  transition: $transition;
+  transition: 0.5s;
   content: "";
   align-content: center;
   background-image: url(../icons/icon_dropdown_arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(180deg);
-  right: $padding;
-  filter: blur(9px);
+  right: 2rem;
+  /* filter: blur(9px); */
+  box-shadow: 0 0 10px 10px;
 }
 
 .arrow{
@@ -535,7 +538,13 @@ code{
 }
 .bio{
 grid-column: 1 / 9;
-order:1;
+display: none;
+}
+.bio-mobile{
+    display: block;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid $bodyColor;
+    border-top: 1px solid $bodyColor;
 }
 
 .footer > .column{

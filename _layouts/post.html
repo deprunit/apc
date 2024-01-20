@@ -1,8 +1,11 @@
 {% include header_post.html %}
-<div class="post"><h1>{{page.nome}}</h1><h2>{{page.titolo}}</h2><div class="container">{{content}}</div></div>
+<div class="post"><h1>{{page.nome}}</h1><div class = "bio-mobile "> 
+ <div><h2> Bio </h2>{{page.bio}}</div>
+ <div><a class = "download" href="{{site.baseurl}}/interventi/{{page.download}}"> Download PDF </a></div>
+</div><h2>{{page.titolo}}</h2><div class="container">{{content}}</div></div>
+
 <div class = "bio "> 
  <div><h2> Bio </h2>{{page.bio}}</div>
-
  <div><a class = "download" href="{{site.baseurl}}/interventi/{{page.download}}"> Download PDF </a></div>
 </div>
 {% include footer.html %}

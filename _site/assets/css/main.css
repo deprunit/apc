@@ -365,6 +365,10 @@ code {
   margin-top: 0px;
 }
 
+.bio-mobile {
+  display: none;
+}
+
 .footer {
   grid-column: 1/9;
   padding: 1rem;
@@ -381,8 +385,8 @@ code {
 
 #scroll_top {
   mix-blend-mode: plus-lighter;
-  height: 1rem;
-  width: 1rem;
+  height: 0.5rem;
+  width: 0.5rem;
   font-size: 0.8rem;
   display: none;
   opacity: 0;
@@ -391,12 +395,11 @@ code {
   z-index: 104;
   border: 1px solid white;
   outline: none;
-  background-color: lightgoldenrodyellow;
-  color: grey;
+  background-color: white;
+  /* color: grey; */
   cursor: pointer;
   padding: 1rem;
   border-radius: 6rem;
-  /* filter: drop-shadow(0px 0px 6px $color-light); */
   transition: 0.5s;
   content: "";
   align-content: center;
@@ -404,8 +407,9 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(180deg);
-  right: 1rem;
-  filter: blur(9px);
+  right: 2rem;
+  /* filter: blur(9px); */
+  box-shadow: 0 0 10px 10px;
 }
 
 .content {
@@ -504,7 +508,13 @@ code {
   }
   .bio {
     grid-column: 1/9;
-    order: 1;
+    display: none;
+  }
+  .bio-mobile {
+    display: block;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
   }
   .footer > .column {
     grid-column: span 4;
