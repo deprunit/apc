@@ -18,6 +18,51 @@
   </div>
 </div>
 <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+   <script>
+    // Function to wrap img and em elements with a common div
+    function wrapImgAndEm() {
+      // Get all img and em elements
+      var imgElements = document.querySelectorAll('img');
+      var emElements = document.querySelectorAll('em');
+
+      // Iterate through img elements
+      imgElements.forEach(function(img) {
+        // Create a new div element
+        var wrapperDiv = document.createElement('div');
+        wrapperDiv.classList.add('mydiv');
+
+        // Insert the img element into the div
+        wrapperDiv.appendChild(img.cloneNode(true));
+
+        // Replace the original img element with the div
+        img.parentNode.replaceChild(wrapperDiv, img);
+      });
+
+      // Iterate through em elements
+      emElements.forEach(function(em) {
+        // Check if the previous sibling is a div (to avoid nested divs)
+        if (em.previousElementSibling && em.previousElementSibling.tagName.toLowerCase() === 'div') {
+          // Append the em element to the existing div
+          em.previousElementSibling.appendChild(em);
+        } else {
+          // Create a new div element
+          var wrapperDiv = document.createElement('div');
+          wrapperDiv.classList.add('mydiv');
+
+          // Insert the em element into the div
+          wrapperDiv.appendChild(em);
+
+          // Replace the original em element with the div
+          em.parentNode.replaceChild(wrapperDiv, em);
+        }
+      });
+    }
+
+    // Call the function when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      wrapImgAndEm();
+    });
+  </script>
 </body>
 </html>
 

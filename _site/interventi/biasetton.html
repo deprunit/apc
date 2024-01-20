@@ -22,7 +22,7 @@
 </header>
 
 <main class="grid">
-<div class="post"><h1>Noemi Biasetton</h1><h2>Nuovi media, politica e design: una nuova arena</h2><p>I temi di questo intervento indagano le origini del rapporto tra la comunicazione politica e la società dell’informazione, a partire dagli anni sessanta del Novecento, in concomitanza alla nascita dei nuovi media. Guarderemo nello specifico come il design della comunicazione visiva si sia formato in quegli anni, aprendo a dei cambiamenti poi diventati fondamentali per la disciplina progettuale.
+<div class="post"><h1>Noemi Biasetton</h1><h2>Nuovi media, politica e design: una nuova arena</h2><div class="container"><p>I temi di questo intervento indagano le origini del rapporto tra la comunicazione politica e la società dell’informazione, a partire dagli anni sessanta del Novecento, in concomitanza alla nascita dei nuovi media. Guarderemo nello specifico come il design della comunicazione visiva si sia formato in quegli anni, aprendo a dei cambiamenti poi diventati fondamentali per la disciplina progettuale.
 Per iniziare questo dibattito è fondamentale situare la narrazione in un contesto storico preciso, in cui le nuove tecnologie hanno avuto un impatto significativo. Ciò ci porta agli Stati Uniti d’America del 1960, un anno tumultuoso in cui il Paese si trovava ad affrontare molteplici sfide e tensioni. Negli anni precedenti, gli eventi internazionali avevano contribuito a definire il clima globale. Nell’emisfero occidentale, l’ascesa di Fidel Castro come primo ministro di Cuba del 1959 aveva scosso profondamente il Paese,  da anni impegnato nella lotta contro il comunismo. Nell’emisfero orientale, invece, alla fine del 1966 si forma il Fronte Nazionale di Liberazione oggi conosciuto come vietcong, il quale metterà a durissima prova l’esercito statunitense impegnato nella guerra del Vietnam. Guardando il fronte internazionale, nel 1957 l’Unione Sovietica lancia il satellite Sputnik 1 sui cieli dell’America marcando la propria supremazia militare nella corsa allo spazio. Per quanto riguarda la politica interna, il 1960 apre a innumerevoli dibattiti in cui la cittadinanza statunitense, prevalentemente quella giovanile, comincia a lottare per ottenere più diritti di uguaglianza e più libertà in un Paese ancora decisamente oppressivo. All’interno di questo contesto complesso e sfaccettato si giocano le 44esime elezioni presidenziali negli Stati Uniti, che vedono due contendenti molto diversi. Per i democratici abbiamo il giovanissimo senatore del Massachusetts John F. Kennedy; per i repubblicani abbiamo l’allora vicepresidente di Eisenhower, Richard Nixon. <img src="http://localhost:4000/apc/interventi/Noemi-1.jpg" alt="" /><em>Kennedy e Nixon sulla copertina del Saturday Evening Post, 1960.</em> I due si fanno una campagna agguerrita durante tutta l’estate del 1960, finché nell’agosto dello stesso anno, quando Kennedy si rende conto che Nixon è leggermente più avanti nei dei sondaggi elettorali, decide di sfidarlo a una serie di dibattiti televisivi. 
 La proposta di Kennedy è accettata: il 26 di ottobre del 1960 a Chicago si tiene il primo dibattito televisivo avvenuto nella storia occidentale e, in generale, nella storia globale. <img src="http://localhost:4000/apc/interventi/Noemi-2.jpg" alt="" /> <em>Dibattito televisivo Kennedy-Nixon, 1960.</em> Il dibattito Kennedy-Nixon ha dato luogo a una serie di miti e convinzioni, anche estremamente differenti tra loro, che continuano ancora oggi. 
 Tuttavia, esiste un mito che ha prevalso sugli altri. 
@@ -52,7 +52,7 @@ Un’ultima esperienza degna di nota riguarda un’altra tipologia di comunicazi
 Di Information è di estrema rilevanza anche il catalogo, progettato dal graphic designer Michael Lauretano. Secondo l’indicazione di McShine, Lauretano non pone alcuna figura umana in copertina: decide di creare una griglia con una serie di oggetti tecnologici che, attraverso l’utilizzo del puntinato e del fotomontaggio, sono assemblati assieme come a creare una patina, quella che secondo l’autore permeerà la vita di tutti i cittadini tutte le cittadine quando questi nuovi media si saranno diffusi in tutto il mondo. <img src="http://localhost:4000/apc/interventi/Noemi-12.jpg" alt="" /> <em>Copertina del catalogo Information, 1970</em>
 Questo intervento costituisce una breve panoramica. Per me, che mi occupo di politica e design contemporaneo, è stato fondamentale utilizzare la storia per riflettere sul momento attuale, in cui la comunicazione politica e i nuovi media sono strettamente interconnessi, e i designer sembrano faticare nel trovare un ruolo significativo. L’obiettivo di questa presentazione non è certo quello di idealizzare acriticamente gli anni sessanta, affermando che in quel periodo il designer avesse un impatto politico più incisivo. Tuttavia, è interessante osservare come, nonostante l’evoluzione della comunicazione politica e delle tecnologie, i designer tendano spesso a fare riferimento a modelli del passato per affrontare le sfide della contemporaneità. Questo può suggerire che invece di fornire strumenti critici per superare le sfide attuali e immaginare nuove modalità d’azione, la storia sembri creare una sorta di “vortice” in cui il ricorso a pratiche consolidate tenda a limitare il campo d’azione del design anziché spingerlo verso nuovi orizzonti.</p>
 
-</div>
+</div></div>
 <div class = "bio "> 
  <div><h2> Bio </h2>Noemi Biasetton è progettista e ricercatrice. Conclusi gli studi presso l’unibz in Design e Arti, ha ottenuto un master in Information Design presso la Design Academy di Eindhoven e un dottorato in Scienze del Design presso l’Università Iuav di Venezia. La sua ricerca esplora il ruolo delle pratiche progettuali in relazione al discorso politico.</div>
 
@@ -78,6 +78,51 @@ Questo intervento costituisce una breve panoramica. Per me, che mi occupo di pol
   </div>
 </div>
 <script src="/apc/assets/js/main.js"></script>
+   <script>
+    // Function to wrap img and em elements with a common div
+    function wrapImgAndEm() {
+      // Get all img and em elements
+      var imgElements = document.querySelectorAll('img');
+      var emElements = document.querySelectorAll('em');
+
+      // Iterate through img elements
+      imgElements.forEach(function(img) {
+        // Create a new div element
+        var wrapperDiv = document.createElement('div');
+        wrapperDiv.classList.add('mydiv');
+
+        // Insert the img element into the div
+        wrapperDiv.appendChild(img.cloneNode(true));
+
+        // Replace the original img element with the div
+        img.parentNode.replaceChild(wrapperDiv, img);
+      });
+
+      // Iterate through em elements
+      emElements.forEach(function(em) {
+        // Check if the previous sibling is a div (to avoid nested divs)
+        if (em.previousElementSibling && em.previousElementSibling.tagName.toLowerCase() === 'div') {
+          // Append the em element to the existing div
+          em.previousElementSibling.appendChild(em);
+        } else {
+          // Create a new div element
+          var wrapperDiv = document.createElement('div');
+          wrapperDiv.classList.add('mydiv');
+
+          // Insert the em element into the div
+          wrapperDiv.appendChild(em);
+
+          // Replace the original em element with the div
+          em.parentNode.replaceChild(wrapperDiv, em);
+        }
+      });
+    }
+
+    // Call the function when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      wrapImgAndEm();
+    });
+  </script>
 </body>
 </html>
 

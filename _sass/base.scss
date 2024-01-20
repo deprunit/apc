@@ -131,6 +131,7 @@ body {
   font-size: $bodySize;
   min-height: 100% !important;
   position: relative;
+
   &>*{
     //z-index: 10000;
     //position: relative;
@@ -323,26 +324,52 @@ code{
   width: 100%;
   padding-top: $padding;
   border-top: $border;
+
   & h1{
     //border-top: 1px white solid;
     //grid-column: 1 / 6;
     //padding-top: 1rem;
     margin:0px;
   }
+  & p{
+    font-size: 1.1em;
+    line-height: 150%;
+    font-weight: 300;
+  }
+  .mydiv{
+    display: grid;
+    /* justify-items: center; */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 2rem 0rem;
+    padding: 4rem 0rem;
+  }
   & img{
-    border-top: 1px solid $bodyColor; 
-    margin-top: 1rem;
+    
+    max-height: 600px;
+    height: auto;
     max-width: 100%;
+    width: auto;
+    /*
+    width: 100%;
+    object-fit: scale-down;
+    object-position: left;
     padding: 1rem 0rem;
     display: block;
+    border-top: 1px solid rgba(255,255,255,.5); 
+    */
   }
   & em{
     font-size: 0.75rem;
     display: block;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    /*margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,.5);*/
     font-style: normal;
-    border-bottom: 1px solid $bodyColor;
+    opacity: 0.8;
+    letter-spacing: 0.035em;
   }
 }
 .bio{
@@ -508,6 +535,7 @@ code{
 }
 .bio{
 grid-column: 1 / 9;
+order:1;
 }
 
 .footer > .column{
