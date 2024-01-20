@@ -535,6 +535,14 @@ code{
 }
 .post{
   grid-column: 1 / 9;
+  & p{
+    font-size: 1.1rem;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  & .mydiv{
+    padding: 2rem 0rem;
+  }
 }
 .bio{
 grid-column: 1 / 9;
